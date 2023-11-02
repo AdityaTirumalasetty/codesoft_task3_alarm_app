@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2f1832"
+    tools:context=".LauncherActivity">
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="250dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="72dp"
+        android:fontFamily="@font/coda"
+        android:textAlignment="center"
+        android:textColor="#6A9A91"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="345dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="121dp"
+        android:fontFamily="@font/coda"
+        android:textAlignment="center"
+        android:textColor="#92dfd1"
+        android:textSize="85sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnADDALARM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDate" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnADDALARM"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#782b28"
+        android:src="@drawable/baseline_alarm_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
